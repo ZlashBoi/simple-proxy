@@ -51,8 +51,6 @@ export default defineEventHandler(async (event) => {
       // Set CORS headers
       headers.set('Access-Control-Allow-Origin', '*');
       headers.set('Access-Control-Expose-Headers', '*');
-      
-
       setResponseHeaders(outputEvent, headers);
       if (token) setTokenHeader(event, token);
     },
